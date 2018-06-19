@@ -1,5 +1,8 @@
+Install and modify scripts for Visual Studio 2017 Professional
 
-Install/Modify scripts for visual studio 2017, some things to keep in mind:
+These scripts are designed to capture and pin the install and modify process of the Visual Studio Installer to a specific version, and to disable update checking and prompting in as many ways as possible.  In studio environments it's frequently best to support one version of Visual Studio at a time, and be able to roll a consistent version across whole teams.
+
+Some things to keep in mind:
 * To upgrade beyond a version installed by these scripts you need to uninstall vs2017 _and_ `Microsoft Visual Studio Installer`
 * There is a hard coded set of components and workloads that are mostly appropriate to console game and tools development
 
@@ -18,3 +21,5 @@ Invoke the installer affixed to the "layout" files accessible to these scripts (
 ## `modify_vs2017.bat`
 
 Similar to install, but land in the modify dialog instead of barrelling through the install with specific components
+
+by @gorlak
